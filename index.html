@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sabores da Estação</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title ">
+                Sabores da Estação
+            </h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-doceria" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a confeitaria
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Nosso cardápio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-a-doceria">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="images/slides/cukcakes.webp" alt="Foto do espaço interno do restaurante">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slides/ovos1.webp" alt="Duas taças de vinho">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slides/ovos2.webp" alt="Uma mesa com comida">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel"data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" class="active" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/doceria.webp" class="d-block w-100 rounded" alt="Foto do logo da Confeitaria">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title ">Sobre <span class="text-colored">a Confeitaria</span></h2>
+                            <p>
+                                "Sabores da Estação" é mais que uma confeitaria; é um convite para uma jornada gastronômica que celebra os sabores e a arte da confeitaria artesanal. 
+                                Convidamos você a se deliciar com nossas criações e a celebrar os melhores sabores de cada época do ano.
+                            </p>
+                            <h3 class="section-title ">Nosso <span class="text-colored">Atendimento</span></h3>
+                            <p>
+                                No momento, estamos trabalhando apenas com atendimento delivery. Ou seja, 
+                                nossas delícias estão apenas a alguns cliques de distância, 
+                                trazendo os melhores sabores da nossa confeitaria diretamente para a sua porta.
+                                Basta fazer o seu pedido online ou por telefone e nossa equipe fará todo o possível 
+                                para garantir que você receba seus doces fresquinhos e deliciosos no horário combinado.
+                                Então, se você está planejando uma celebração especial, uma tarde de chá com amigos ou 
+                                simplesmente deseja satisfazer aquele desejo de um doce saboroso, deixe a "Sabores da Estação" 
+                                cuidar de tudo para você. Faça seu pedido hoje e prepare-se para uma experiência verdadeiramente 
+                                indulgente!                            
+                            </p>
+                            <h6 class="section-title ">Cidades que <span class="text-colored">atendemos no momento</span></h6>
+                            <ul id="cidades-atendidas">
+                                <li>Balneário Gaivota - SC</li>
+                                <li>Sombrio - SC</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Para todas <span class="text-colored">as ocasiões</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded mb-2" src="images/eventos/aniversario.jpg" alt="Foto cupcake com velas">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-calendar-heart-fill"></i>
+                            Aniversários</h3>
+                        <p>
+                            Preparar doces para aniversários é uma arte que combina criatividade, sabor e dedicação. Desde os clássicos 
+                            brigadeiros até os mais elaborados cupcakes e bolos decorados, cada doce é cuidadosamente confeccionado para 
+                            tornar a celebração ainda mais especial. Utilizando ingredientes frescos e de qualidade, cada docinho é moldado, 
+                            recheado e decorado com carinho, garantindo não apenas um festival de sabores, mas também uma experiência 
+                            visualmente encantadora. Cada detalhe, desde a escolha das cores e formas até a finalização com enfeites e 
+                            decorações temáticas, é pensado para refletir a personalidade e o tema da festa. Com uma variedade de opções 
+                            que agradam a todos os gostos, os doces para aniversários são uma parte essencial de qualquer comemoração, 
+                            tornando cada mordida uma lembrança doce e memorável, e cada sorrizo, o maior dos presentes.                        
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded mb-2" src="images/eventos/casamento.jpg" alt="Foto cupcake com velas">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-arrow-through-heart-fill"></i>
+                            Recepção para casamentos</h3>
+                        <p>
+                            Preparar doces para a recepção de casamentos é uma arte delicada que combina elegância, sofisticação e sabor. 
+                            Cada doce é meticulosamente confeccionado para refletir a beleza e o romance da ocasião, transformando a 
+                            mesa de sobremesas em uma verdadeira obra de arte. Desde os clássicos bem-casados até as exuberantes 
+                            trufas abertas e os elaborados bolos decorados, cada doce é uma expressão do amor e dos desejos do casal. 
+                            Utilizando ingredientes finos e técnicas de confeitaria de alta qualidade, cada detalhe é cuidadosamente 
+                            elaborado para garantir uma experiência sensorial inesquecível para os convidados. Com uma variedade 
+                            de opções que incluem desde sabores clássicos até criações mais ousadas, os doces para a recepção de 
+                            casamentos são uma parte essencial da celebração, tornando cada momento ainda mais especial e memorável 
+                            para todos os presentes.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded mb-2" src="images/eventos/confraternizacoes.jpg" alt="Foto cupcake com velas">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-people-fill"></i>
+                            Confraternizações</h3>
+                        <p>
+                            Preparar doces para confraternizações é uma maneira encantadora de celebrar momentos de união e alegria entre 
+                            amigos, familiares ou colegas de trabalho. Cada doce é cuidadosamente confeccionado para adicionar um toque de 
+                            doçura e leveza à ocasião, criando memórias deliciosas que serão lembradas por muito tempo. Desde os clássicos 
+                            brigadeiros e cupcakes até os mais elaborados doces finos, há uma variedade de opções para atender 
+                            a todos os gostos e preferências. Utilizando ingredientes frescos e de alta qualidade, cada doce é preparado 
+                            com amor e dedicação. Com uma apresentação caprichada e detalhes personalizados, os doces adicionam charme 
+                            e elegância à mesa. Seja qual for a natureza da confraternização, os doces são uma parte essencial da celebração, 
+                            razendo sorrisos e compartilhando momentos de felicidade com todos os presentes.                     
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cardapio" class="pb-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        Nosso <span class="text-colored">cardápio</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#pascoa" class="fw-bold text-start nav-link text-colored active">Páscoa</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#docinhos" class="fw-bold text-start nav-link text-colored">Docinhos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bolos-de-pote" class="fw-bold text-start nav-link text-colored">Bolos de Porte</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#copinho-felicidade" class="fw-bold text-start nav-link text-colored">Copinhos da Felicidade</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#cupcakes" class="fw-bold text-start nav-link text-colored">Cupcakes</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="pascoa">
+                                <div class="row">
+                                    <p>
+                                        Os ovos de Páscoa de colher são uma verdadeira indulgência para os 
+                                        amantes de chocolate. Com suas cascas delicadamente moldadas, revelam 
+                                        um interior recheado com cremosidade irresistível. Cada colherada é uma 
+                                        experiência luxuosa, combinando a doçura do chocolate com uma variedade 
+                                        de recheios tentadores, como brigadeiro, creme de avelã, trufa, ou até 
+                                        mesmo frutas frescas. Perfeitos para compartilhar ou saborear sozinho, 
+                                        esses ovos de colher são o presente ideal para celebrar a temporada de 
+                                        Páscoa com elegância e sabor.
+                                    </p>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/pascoa/Surpresinha de Morango.webp" alt="Surpresinha de Morango" />
+                                        <h5 class="text-colored fw-bold mt-2">Surpresinha de Morango</h5>
+                                        <p>
+                                            Ovo contendo um Blend de chocolates, recheado 
+                                            com brigadeiro de ninho, chocolate ao leite e chocolate 
+                                            meio amargo, junto com deliciosos morangos...
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/pascoa/Ouro Branco.webp" alt="Ouro Branco" />
+                                        <h5 class="text-colored fw-bold mt-2">Ouro Branco</h5>
+                                        <p>
+                                            Ovo de chocolate branco, recheado com um 
+                                            brigadeiro feito com um Blend de chocolates nobres 
+                                            e os amados bombons de Ouro Branco...
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/pascoa/Raffaello.webp" alt="Raffaello" />
+                                        <h5 class="text-colored fw-bold mt-2">Raffaello</h5>
+                                        <p>
+                                            Ovo de Chocolate Branco, recheado com 
+                                            amendoas laminadas, coco e brigadeiro de chocolate 
+                                            branco nobre, além de deliciosos  bombos de Raffaello...
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/pascoa/KitKat.jpg" alt="KitKat" />
+                                        <h5 class="text-colored fw-bold mt-2">KitKat</h5>
+                                        <p>
+                                            Ovo contendo um Blend de chocolates, 
+                                            recheado com um brigadeiro de chocolate ao leite e 
+                                            chocolate meio amargo, e deliciosos chocolates KitKat...
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/pascoa/Ferreiro Rocher.webp" alt="Ferreiro Rocher" />
+                                        <h5 class="text-colored fw-bold mt-2">Ferreiro Rocher</h5>
+                                        <p>
+                                            Ovo contendo um Blend de chocolates nobres,   
+                                            recheado com creme de avelã, castanha Xerém, brigadeiro 
+                                            de chocolate e deliciosos Ferreiro Rocher...
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="docinhos">
+                                <div class="row">
+                                    <p>
+                                        Os docinhos de festa são pequenas delícias que encantam os paladares em qualquer celebração. 
+                                        Com sua variedade de cores, formas e sabores, eles são verdadeiras obras de arte comestíveis. 
+                                        Desde os clássicos brigadeiros até os sofisticados copinhos groumet, esses docinhos 
+                                        são uma explosão de doçura que alegra os convidados de todas as idades. 
+                                        Cada mordida é uma experiência memorável, tornando esses docinhos  
+                                        o complemento perfeito para qualquer ocasião especial.
+                                    </p>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/docinhos/Brigadeiro-pretor.webp" alt="Brigadeiro Tradicional" />
+                                        <h5 class="text-colored fw-bold mt-2">Brigadeiro Tradicional</h5>
+                                        <p>
+                                            Um clássico irresistível, o brigadeiro tradicional é feito com o mais puro cacau, 
+                                            resultando em uma deliciosa bola de chocolate que derrete na boca. 
+                                            Com sua cobertura de granulado, é o doce perfeito para satisfazer os desejos de chocolate.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/docinhos/brigadeiro-branco.webp" alt="Brigadeiro Branco" />
+                                        <h5 class="text-colored fw-bold mt-2">Brigadeiro Branco</h5>
+                                        <p>
+                                            Uma variação elegante do brigadeiro clássico, o brigadeiro branco é feito com leite condensado, 
+                                            manteiga de cacau e um toque de baunilha, resultando em uma textura cremosa e sabor suave. É uma opção sofisticada 
+                                            para quem prefere um doce menos intenso.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/docinhos/Casadinho.webp" alt="Casadinho" />
+                                        <h5 class="text-colored fw-bold mt-2">Casadinho</h5>
+                                        <p>
+                                            O casadinho é uma combinação perfeita de brigadeiro tradicional e brigadeiro branco, unidos em uma única mordida. 
+                                            Com uma metade coberta de chocolate e a outra de chocolate branco, este doce é uma festa de sabores e texturas.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/docinhos/Beijinho-vegano.webp" alt="Beijinho" />
+                                        <h5 class="text-colored fw-bold mt-2">Beijinho</h5>
+                                        <p>
+                                            Um clássico das festas brasileiras, o beijinho é feito com coco ralado, leite condensado e manteiga, formando uma massa macia e envolvente. 
+                                            Coberto com coco ralado, este doce é uma explosão de sabor tropical que agrada a todos os paladares.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/docinhos/Trufa Aberta Chocolate Branco.webp" alt="Trufa Aberta Chocolate Branco" />
+                                        <h5 class="text-colored fw-bold mt-2">Trufa Aberta Chocolate Branco</h5>
+                                        <p>
+                                            Uma indulgência luxuosa, a trufa aberta de chocolate branco combina a cremosidade do recheio de ganache com o sabor suave do chocolate branco. 
+                                            Decorada com raspas de chocolate e/ou frutas frescas, é uma verdadeira obra de arte comestível, perfeita para ocasiões especiais.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="bolos-de-pote">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/bolos-de-pote/bolo-de-pote.webp" alt="Bolo de Pote" />
+                                        <h5 class="text-colored fw-bold mt-2">Bolo de Pote 4 Leites</h5>
+                                        <p>
+                                            Cada camada deste bolo é cuidadosamente montada em um pote, com um recheio delicioso e cremoso,
+                                            criando uma experiência de sabor única a cada colherada. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="copinho-felicidade">
+                                <div class="row">
+                                    <p>
+                                        Uma verdadeira dose de felicidade em forma de sobremesa!
+                                    </p>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/copinho-felicidade/avelan.webp" alt="Pizza" />
+                                        <h5 class="text-colored fw-bold mt-2">Brigadeiro Branco com creme de avelã</h5>
+                                        <p>
+                                            Um copinho da felicidade que combina o melhor de dois mundos: o cremoso brigadeiro branco e o irresistível creme de avelã.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/copinho-felicidade/branco-e-uva.webp" alt="Pizza" />
+                                        <h5 class="text-colored fw-bold mt-2">Brigadeiro Branco com uva verde</h5>
+                                        <p>
+                                            Um copinho da felicidade para quem gosta de algo mais suave. Ele contém o doce do nosso cremoso brigadeiro branco e a acidez da uva verde.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="cupcakes">
+                                <div class="row">
+                                    <p>
+                                        Feitos com massa fofinha de chocolate, estes cupcakes são uma explosão de sabor. Mas a verdadeira surpresa está no recheio: um delicioso creme de leite ninho que derrete na boca, deixando você desejando mais a cada mordida!
+                                    </p>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/cupcakes/chocolate-com-leite-ninho.webp" alt="Bolo" />
+                                        <h5 class="text-colored fw-bold mt-2">Cupcake</h5>
+                                        <p>
+                                            Massa de chocolate, com chantilly aveludado branco e recheio de creme de ninho.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/cupcakes/chocolate-ninho-uva.webp" alt="Bolo" />
+                                        <h5 class="text-colored fw-bold mt-2">Cupcake com uva</h5>
+                                        <p>
+                                            Massa de chocolate, com chantilly aveludado rosé, uvas verdes e recheio de creme de ninho.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pb-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center"> Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form id="formWhatsApp">
+                            <div class="mb-3">
+                            <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                            <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                            <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                            <textarea id="mensagem2" class="form-control" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar mensagem pelo WhatsApp</button>
+                        </form>
+                    </div>
+                    <div class="col md-5">
+                        <div class="row"><h3 class="section-title fs-4 text-colored">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            Redes sociais
+                        </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="https://www.instagram.com/saboresdaestcao20" target="_blank">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="https://www.instagram.com/saboresdaestcao20" target="_blank">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="https://api.whatsapp.com/send?phone=5548996726723&text=Ol%C3%A1!%20%20Vi%20seus%20produtos%20no%20site%20Sabores%20da%20Esta%C3%A7%C3%A3o.%20Queria%20mais%20informa%C3%A7%C3%B5es." target="_blank">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4"><h3 class="section-title fs-4 text-colored">
+                            <i class="bi bi-cursor-fill"></i>
+                            Endereço
+                        </h3>
+                            <p class="mb-0">Rua Estrada Geral, S/nº, Bairro Rio Novo</p>
+                            <p>Balenário Gaivota - SC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <script>
+        document.getElementById("formWhatsApp").addEventListener("submit", function(event) {
+            event.preventDefault(); // Com esse campo, evitamos o envio padrão do formulário, assim você tem mais controle sobre o que acontece quando o formulário é enviado. Em muitos casos, especialmente quando você está manipulando dados do formulário via JavaScript antes de enviá-los, é preferível evitar o envio padrão para ter a chance de realizar as ações necessárias antes que o formulário seja submetido.
+            
+            // Criei uma váriável para preencher o telefone padrão desejado ao qual desejamos enviar a mensagem. Código do país + ddd + telefone.
+            var telefone = "5548996726723";
+            
+            // Aqui criamos uma váriavel onde será salvo os dados que o usuário preencher no ID do nome e da mensagem.
+            var nome = document.getElementById("nome").value;
+            var mensagem = document.getElementById("mensagem2").value;
+            
+            // Constrói a URL do WhatsApp com os parâmetros de telefone e mensagem. Podemos colcoar uma mensagem personalisada nesse campo.
+            var urlWhatsApp = "https://api.whatsapp.com/send?phone=" + telefone + "&text=" + encodeURIComponent("Olá! Meu nome é " + nome + ". Vi seus produtos no site Sabores da Estação. " + mensagem);
+            
+            // Para que o usuário não saia do nosso site, adicionei esse campo que abre uma nova janela com o link do WhatsApp.
+            window.open(urlWhatsApp, "_blank");
+        });
+    </script>
+
+</body>
+</html>
